@@ -9,7 +9,6 @@
 }
 
 .container {
-    border: 1px solid red;
     height: 100vh;
 }
 
@@ -32,7 +31,7 @@
 }
 .sub-header {
     font-family: Geist;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 15px;
     text-align: center;
     margin-top: 10px;

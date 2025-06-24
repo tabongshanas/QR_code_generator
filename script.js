@@ -14,9 +14,7 @@ const qrOperation = document.querySelector('.qr-operation');
 slider.classList.add('s-a');
 slide.classList.add('sl-a');
 
-geneBtn.addEventListener('click' , (e) => {
-    e.preventDefault(); 
-    
+function generate_qr_code() {
     if (qrInput.value) {
         qrImgCon.classList.add('qr-img-add'); 
         qrInput.style = 'border: 1px solid rgba(0, 0, 0, 0.616)';
@@ -24,6 +22,14 @@ geneBtn.addEventListener('click' , (e) => {
     }
     else {
         qrInput.style = 'border: 1px solid red';
+    }
+}
+
+geneBtn.addEventListener('click' , generate_qr_code);
+
+window.addEventListener('keydown' , (e) => {
+    if (e.keyCode == 13) {
+        generate_qr_code();
     }
 });
 
