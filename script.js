@@ -10,6 +10,7 @@ const slider = document.querySelector('.slider');
 const slide = document.querySelector('.slide');
 const container = document.querySelector('.container');
 const qrOperation = document.querySelector('.qr-operation');
+const subHeader = document.querySelector('.sub-header');
 
 slider.classList.add('s-a');
 slide.classList.add('sl-a');
@@ -36,9 +37,10 @@ window.addEventListener('keydown' , (e) => {
 
 slider.addEventListener('click' , (e) => {
     e.preventDefault();
-    slider.classList.toggle('s-a');
+    slider.classList.toggle('sl-a');
     slide.classList.toggle('sl-a');
     slide.classList.toggle('slide-change');
     container.classList.toggle('body'); 
     qrOperation.classList.toggle('qroperate'); 
+    subHeader.classList.toggle('sub-header-color-js');
 });

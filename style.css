@@ -24,14 +24,14 @@
     font-family: Geist;
     font-weight: 900;
     color: var(--primaryColor);
-    margin-top: 30px;
+    padding-top: 30px;
     text-align: center;
     font-size: 33px;
     text-decoration: underline;
 }
 .sub-header {
     font-family: Geist;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 15px;
     text-align: center;
     margin-top: 10px;
@@ -122,7 +122,7 @@
     cursor: pointer;
 }
 .slide {
-    background-color: rgba(211, 211, 211, 0.973);
+    background-color: white;
     position: absolute;
     top: 4px;
     /* put to 10px */
@@ -135,17 +135,22 @@
 }
 
 .s-a {
-    background-color: azure;
+    background-color: black;
 }
 .sl-a {
-    background-color: rgba(211, 211, 211, 0.973);
+    background-color: white;
 }
 .slide-change {
     right: 10px;
+    background-color: black;
 }
 .body {
-    background-color: azure;
+    background-color: black;
 }
 .qroperate {
     background-color: white;
+}
+
+.sub-header-color-js {
+    color: white;
 }
